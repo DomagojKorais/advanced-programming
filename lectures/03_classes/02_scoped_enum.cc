@@ -1,6 +1,7 @@
 #include <iostream>
 
 enum class color { red, yellow, green };
+//it's somehow a color space
 // enum color{red=0, yellow=1, green=2}; // equivalent
 
 void dwim(const color c) {

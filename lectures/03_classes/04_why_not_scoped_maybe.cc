@@ -1,6 +1,7 @@
 #include <iostream>
 
 enum multiple_flags : unsigned int {
+//all powrs of two that can be stored with only one byte, powers of 2.
   flag1 = 1,
   flag2 = 2,
   flag3 = 4,
@@ -9,7 +10,7 @@ enum multiple_flags : unsigned int {
   flag4 = 8,   // additional functions needed
   flag5 = 16,  // imply flag3
 
-  // useful combinations
+  // useful combinations ("|" means "binary or", the number is compared bit by bit with the other and if there is at least a 1 it will be 1)
   comb1 = flag1 | flag2,
   comb2 = flag1 | flag3,
   comb3 = comb1 | flag3,

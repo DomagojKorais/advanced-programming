@@ -3,11 +3,13 @@
 enum color { red, yellow, green };
 // enum color{red=0, yellow=1, green=2}; // equivalent
 
+
+//we use switch instead of if else.
 void dwim(const color c) {
   switch (c) {
     case red:
       std::cout << "option 1: red\n";
-      break;
+      break; //serve per bloccare il codice!
     case yellow:
       std::cout << "option 2: yellow\n";
       break;
