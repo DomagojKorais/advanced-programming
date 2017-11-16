@@ -1,6 +1,5 @@
 SRC = $(wildcard *.cc)
-CXX = c++
-CXXFLAGS = -g -std=c++11 -Wall -Wextra -I ../../lectures/04_error_handling
+CXXFLAGS = -g -std=c++11 -Wall -Wextra -I ../04_error_handling
 EXE = $(SRC:.cc=.x)
 INC = $(wildcard *.h)
 
@@ -19,6 +18,5 @@ clean:
 	rm -f $(EXE) *~
 
 .PHONY: clean
-
 
 
