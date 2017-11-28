@@ -7,12 +7,12 @@ addons:
       - llvm-toolchain-precise-3.8
       - ubuntu-toolchain-r-test
     packages:
-      - g++-5
+      - g++-6
       - clang-3.8
 
-compiler:
-  - g++-5
-  - clang++-3.8
+env:
+  - COMPILER=g++-6
+  - COMPILER=clang++-3.8
 
 script:
-  - make CXX=$CXX
+  - make CXX=$COMPILER
